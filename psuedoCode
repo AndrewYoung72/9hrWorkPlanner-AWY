@@ -1,0 +1,36 @@
+# Task
+
+User Story
+AS AN employee with a busy schedule
+I WANT to add important events to a daily planner
+SO THAT I can manage my time effectively
+Acceptance Criteria
+GIVEN I am using a daily planner to create a schedule
+WHEN I open the planner
+THEN the current day is displayed at the top of the calendar
+WHEN I scroll down
+THEN I am presented with timeblocks for standard business hours
+WHEN I view the timeblocks for that day
+THEN each timeblock is color coded to indicate whether it is in the past, present, or future
+WHEN I click into a timeblock
+THEN I can enter an event
+WHEN I click the save button for that timeblock
+THEN the text for that event is saved in local storage
+WHEN I refresh the page
+THEN the saved events per
+
+#### set any global variables needed for the planner
+
+#### Construct current day using jquery format("dddd, MMMM, Do")
+
+#### Create nine time blocks, one for each hour of the work day, 9am thru 5pm.
+
+#### Utilise the Bootstrap, Fontawsome, and Googlefont links provided in the html to create the main container, and the nine timeblocks for the planner.
+
+#### Each timeblock must be able to accept text entry.
+
+#### Create a function to indicate by color wether each time block is past, present, or future?
+
+#### Create a save event for each timeblock that saves the event in local storage.
+
+#### The saved events must persist when the page is refreshed.
