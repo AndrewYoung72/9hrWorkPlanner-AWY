@@ -25,9 +25,9 @@ THEN the saved events per
 
 #### Create nine time blocks, one for each hour of the work day, 9am thru 5pm.
 
-#### HTML?  Maybe use textarea element-with 9 rows and 3 columns- inside div tags for the timeblock structure. Left column could be used for the label_or use placholder if that would work_ middle column for the textarea, right column for the save button. 
+#### HTML?  Maybe use textarea element-with 9 rows and 3 columns- inside div tags for the timeblock structure. Left column could be used for the label, middle column for the textarea, right column for the save button. 
 
-#### Utilise the Bootstrap, Fontawsome, and Googlefont links provided in the html to create the main container, and the nine timeblocks for the planner.
+#### Utilise the Bootstrap, Fontawesome, and Googlefont links provided in the html to create the main container, and the nine timeblocks for the planner.
 
 #### Each timeblock must be able to accept text entry.
 
