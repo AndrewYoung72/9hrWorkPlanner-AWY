@@ -13,6 +13,8 @@ var hourArray = [9, 10, 11, 12, 13, 14, 15, 16];
 
 var currentTime = currentDay.format("H");
 
+var content = localStorage.getItem("textArea");
+
 
 for (var i = 0; i < 8; i++) {
   
@@ -26,11 +28,11 @@ for (var i = 0; i < 8; i++) {
   timeH3.classList = "hour";
 
   if(hourArray[i] < currentTime) {
-    textArea.classList = "description future";
+    textArea.classList = "description past";
   } else if (hourArray[i] == currentTime) {
     textArea.classList = "description present";
   } else {
-    textArea.classList = "description past";
+    textArea.classList = "description future";
   }
 
   button.classList = "saveBtn";
@@ -38,6 +40,16 @@ for (var i = 0; i < 8; i++) {
   timeH3.textContent = timeArray[i];
   button.textContent = "save";
   
+
+  // addEventlistener
+  // button.addEventlistener
+  
+  
+
+  
+
+
+
   timeBlockDiv.append(timeH3);
   timeBlockDiv.append(textArea);
   timeBlockDiv.append(button);

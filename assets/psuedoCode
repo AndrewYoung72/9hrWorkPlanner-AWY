@@ -21,18 +21,18 @@ THEN the saved events per
 
 #### set any global variables needed for the planner
 
-#### Construct current day using jquery format $("#currentDay").text(currentDay.format("dddd, MMMM Do YYYY, h:mm:ss a"));
+#### Construct current day using jquery format $("#currentDay").text(currentDay.format("dddd, MMMM Do YYYY, h:mm:ss a"));-Completed
 
 #### Create nine time blocks, one for each hour of the work day, 9am thru 5pm.
 
 #### HTML?  Maybe use textarea element-with 9 rows and 3 columns- inside div tags for the timeblock structure. Left column could be used for the label, middle column for the textarea, right column for the save button. 
 
-#### Utilise the Bootstrap, Fontawesome, and Googlefont links provided in the html to create the main container, and the nine timeblocks for the planner.
+#### ? Utilise the Bootstrap, Fontawesome, and Googlefont links provided in the html to create the main container, and the nine timeblocks for the planner.
 
 #### Each timeblock must be able to accept text entry.
 
-#### Create a function to indicate by color wether each time block is past, present, or future?
+#### Create a function to indicate by color wether each time block is past, present, or future? This will require a current time element which is used for the basis to toggle the colors of the time blocks between past, present, and future.
 
-#### Create a save event for each timeblock that saves the event in local storage.
+#### Create a save event for each timeblock that saves the event in local storage. The contents of the timeblocks must remain when the page is refreshed.
 
-#### The saved events must persist when the page is refreshed.
+
