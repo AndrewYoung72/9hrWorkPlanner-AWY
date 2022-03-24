@@ -6,14 +6,14 @@ $("#currentDay").text(currentDay.format("dddd, MMMM Do YYYY, h:mm:ss a"));
         <h3 class="hour">9:00AM</h3>
         <textarea class="description"></textarea>
         <button class="saveBtn">save</button>
-      </div> */}
+    </div> */}
 var timeArray = ["9:00Am", "10:00AM", "11:00AM", "12:00PM", "1:00PM", "2:00PM", "3:00PM", "4:00PM"];
 
 var hourArray = [9, 10, 11, 12, 13, 14, 15, 16];
 
 var currentTime = currentDay.format("H");
 
-var content = localStorage.getItem("textArea");
+var contentArray = [];
 
 
 for (var i = 0; i < 8; i++) {
@@ -23,6 +23,7 @@ for (var i = 0; i < 8; i++) {
   var timeH3 = document.createElement("h3");
   var textArea = document.createElement("textarea");
   var button = document.createElement("button");
+  var content = document.querySelector(".description");
   
   timeBlockDiv.classList = "time-block row";
   timeH3.classList = "hour";
@@ -40,10 +41,17 @@ for (var i = 0; i < 8; i++) {
   timeH3.textContent = timeArray[i];
   button.textContent = "save";
   
-
+  
   // addEventlistener
   // button.addEventlistener
   
+  
+  button.addEventListener("click", function(event) {
+    event.preventDefault();
+    var content = document.querySelector(".description");
+    // localStorage.setItem("save", content);
+    localStorage.setItem("contentArray", JSON.stringify(content.value));
+  }, false);
   
 
   
@@ -55,3 +63,15 @@ for (var i = 0; i < 8; i++) {
   timeBlockDiv.append(button);
   containerDiv.append(timeBlockDiv);
 }
+
+function getContent() {
+  var lastEntry = JSON.parse(localStorage.getItem("content.value"));
+  if (lastEntry !== null) {
+
+  }
+} 
+
+function init() {
+  getContent();
+}
+init();

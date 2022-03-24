@@ -20,7 +20,7 @@ textarea {
   border-radius: 0;
   border-bottom: 10px solid black;
 }
-
+/*added width to set text area box*/
 .description {
   white-space: pre-wrap;
   width: 75%;
