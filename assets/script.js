@@ -65,10 +65,7 @@ for (var i = 0; i < 8; i++) {
 }
 
 function getContent() {
-  var lastEntry = JSON.parse(localStorage.getItem("content.value"));
-  if (lastEntry !== null) {
-
-  }
+  var lastEntry = JSON.parse(localStorage.getItem("contentArray"));
 } 
 
 function init() {
