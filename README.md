@@ -10,3 +10,7 @@
  https://andrewyoung72.github.io/9hrWorkPlanner-AWY/
 
  My project comes close to meeting the requirements, but again falls short. I was not able to figure out how to attach an event listener to the save button for each time block or have the text remain when the page is refreshed. This is the same asspect I failed on in the last project and I have not been able to figure out how it works. However, with the help of my tutor I was able to create the time blocks, with the hour designation and save buttons on the end. The time blocks also display the past, present, and future with the correct colors. 
+ 
+ ## Screenshot
+ 
+ <img width="1512" alt="Screen Shot 2022-03-26 at 12 46 36 PM" src="https://user-images.githubusercontent.com/97897877/160253121-eaaf191f-0c88-4da2-ac39-24231018ac16.png">
